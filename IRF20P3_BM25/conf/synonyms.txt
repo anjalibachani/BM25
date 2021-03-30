@@ -1,0 +1,64 @@
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+#-----------------------------------------------------------------------
+#some test synonym mappings unlikely to appear in real input text
+aaafoo => aaabar
+bbbfoo => bbbfoo bbbbar
+cccfoo => cccbar cccbaz
+fooaaa,baraaa,bazaaa
+
+# Some synonym groups specific to this example
+GB,gib,gigabyte,gigabytes
+MB,mib,megabyte,megabytes
+Television, Televisions, TV, TVs
+#notice we use "gib" instead of "GiB" so any WordDelimiterGraphFilter coming
+#after us won't split it into two words.
+
+# Synonym mappings can be used for spelling correction too
+pixima => pixma
+
+
+Anti-Refugee,Анти-беженец,Anti-Flüchtling,Anti-bezhenets,Antirefugee
+rally,ралли,Rallye
+Refugee,Flüchtling,Беженец,refugees,Flüchtlinge,беженцы,беженце
+Dresden,Дрезден,Drezden
+Syria,Сирия,Syrien,сирийский,syrisch,Syrian
+Civil,гражданский,bürgerlich
+war,Krieg,война
+rise,Vormarsch,подниматься
+russian,russia,русский,Russisch,Россия,Russland,Russische
+grenades,granaten,гранаты,граната,Granate,бомбить
+Internal,внутренний,intern
+млн,million,Million
+germany,Deutschland,Германия,Germaniya
+document,Dokument,документ
+Delegation,делегация
+Embassy,Botschaft,Посольство,посланцы
+campaigns,Kampagnen,кампании
+Anti-Refugee,Анти-беженец,Anti-Flüchtling,Anti-bezhenets,Antirefugee
+Europe, European, европа, Европейский, Europa
+us, US, United States,U.S.A, USA, America, Amerika, Америка, США 
+un, UN, United Nations
+militants,боевиков,Militante
+tunisians,tunisian,тунисских, Tunesisch
+тунисских,tunisians,tunisian,тунисских, Tunesisch
+Iran, Iranian, iranisch,iranische,иранский
+iranische,Iran, Iranian, iranisch,iranische,иранский
+kill,kills,murder,убийство,töten,getötet
+winter,зима
+photojournalist,fotojournalist
+greek,griechische,греческий
+asyl,asylum
+boy,junge,мальчик
+палестинский,palestinian,palästinensisch
+
